@@ -15,9 +15,9 @@ body{
 }
 
 input:checked{
-    counter-increment: game;
+    counter-increment: juego;
 }
 
 .contador::after {
-    content: counter(game);
+    content: counter(juego);
 }
