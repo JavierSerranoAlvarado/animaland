@@ -146,7 +146,7 @@ body{
 .layer-9 .nube-1{
     position: absolute;
     width: 100%;
-    background:blue;
+    background:white;
     height:5rem;
     border-radius:6rem 10rem 5rem 0;
     bottom:0;
@@ -155,7 +155,7 @@ body{
 
 .layer-9 .nube-2{
     position: absolute;
-    background:blue;
+    background:white;
     width: 8rem;
     height:6rem;
     border-radius:50% 50%;
@@ -166,7 +166,7 @@ body{
 .layer-10 .nube-1{
     position: absolute;
     width: 100%;
-    background:blue;
+    background:white;
     height:5rem;
     border-radius:10rem 6rem 0rem 5rem;
     bottom:0;
@@ -175,7 +175,7 @@ body{
 
 .layer-10 .nube-2{
     position: absolute;
-    background:blue;
+    background:white;
     width: 8rem;
     height:6rem;
     border-radius:50% 50%;
@@ -302,6 +302,9 @@ body{
     width: 1rem;
     height: 1rem;
     top: 1.9rem;
+    animation-name: parpadeo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .head .eye__left{
@@ -323,4 +326,19 @@ input:checked{
 
 .contador::after {
     content: counter(juego);
+}
+
+
+@keyframes parpadeo{
+    0%{
+        transform:scale(1);
+    }
+
+    5%{
+        transform: scale(0.5, 0.2);
+    }
+
+    10%{
+        transform: scale(1);
+    }
 }
