@@ -1,8 +1,10 @@
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 
 html{
     font-size: 62.5%;
@@ -11,8 +13,209 @@ html{
 body{
     font-size: 1.6rem;
     counter-reset: juego;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
 
 }
+
+.phone{
+    margin: 1rem;
+    position: relative;
+    width: 30rem;
+    height: 60rem;
+    border-radius:2rem;
+    border:0.8rem solid black;
+    background: yellow; 
+    box-shadow: 0 1.9rem 3.8rem rgba(31, 30, 30, 0.226);
+}
+
+.layer-1{
+    position: absolute;
+    z-index: 1;
+    height:45rem;
+    width: 8rem;
+    background:white;
+    bottom: 0;
+    right: 6rem;
+
+}
+
+.layer-2{
+    position: absolute;
+    z-index: 2;
+    height:45rem;
+    width: 8rem;
+    background:white;
+    bottom: 0;
+    right: 15rem;
+    
+}
+.layer-3{
+    position: absolute;
+    z-index: 3;
+    height:40rem;
+    width: 20rem;
+    background:rgb(29, 228, 46);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    
+}
+
+.layer-4{
+    position: absolute;
+    z-index: 4;
+    height:33rem;
+    width: 8rem;
+    background: white;
+    bottom: 0;
+    left: 2rem;
+    
+}
+
+.layer-5{
+    position: absolute;
+    z-index: 5;
+    height:28rem;
+    width: 22rem;
+    background:rgb(16, 129, 25);
+    bottom: 0;
+    left: 0;
+    
+}
+
+.layer-6{
+    position: absolute;
+    z-index: 6;
+    height:23rem;
+    width: 8rem;
+    background: white;
+    bottom: 0;
+    right: 1.5rem;
+    
+}
+
+.layer-7{
+    position: absolute;
+    z-index: 7;
+    height:18rem;
+    width: 12rem;
+    background:rgb(21, 167, 33);
+    bottom: 0;
+    right: 0;
+    
+}
+
+.layer-8{
+    position: absolute;
+    z-index: 8;
+    height:10rem;
+    width: 12rem;
+    background:rgb(54, 250, 201);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    
+}
+
+.layer-9{
+    position: absolute;
+    z-index: 9;
+    height:8rem;
+    width: 12rem;
+    background:rgb(255, 255, 255);
+    bottom: 0;
+    left: 0;
+    
+}
+
+.layer-10{
+    position: absolute;
+    z-index: 10;
+    height:8rem;
+    width: 12rem;
+    background:rgb(255, 255, 255);
+    bottom: 0;
+    right: 0;
+    
+}
+
+.ear__left__out{
+    position: absolute;
+    background: black;
+    border-radius: 20% 80%;
+    top: 0;
+    left: 1rem;
+    width:2.5rem;
+    height: 5rem;
+}
+
+.ear__left__in{
+    position: absolute;
+    background: red;
+    border-radius: 2% 90%;
+    top: 0.7rem;
+    left: 1.7rem;
+    width:1.5rem;
+    height: 4rem;
+
+}
+
+.ear__right__out{
+    position: absolute;
+    background: black;
+    border-radius: 80% 20%;
+    top: 0;
+    right: 1rem;
+    width:2.5rem;
+    height: 5rem;
+}
+
+.ear__right__in{
+    position: absolute;
+    background: red;
+    border-radius: 90% 2%;
+    top: 0.7rem;
+    right: 1.7rem;
+    width:1.5rem;
+    height: 4rem;
+
+}
+
+.head{
+    position: absolute;
+    background: black;
+    border-radius: 50%;
+    top: 1.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width:6rem;
+    height: 5rem;
+}
+
+.head .head__eye{
+    position: absolute;
+    background: red;
+    width: 1rem;
+    height: 1rem;
+    top: 1.9rem;
+}
+
+.head .eye__left{
+    left: 1.5rem;
+    border-radius: 2% 90%;
+}
+
+.head .eye__right{
+    right: 1.5rem;
+    border-radius: 90% 2%;
+}
+
 
 input:checked{
     counter-increment: juego;
