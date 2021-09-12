@@ -27,9 +27,34 @@ body{
     height: 60rem;
     border-radius:2rem;
     border:0.8rem solid black;
-    background: yellow; 
+    background: rgb(8, 8, 145); 
     box-shadow: 0 1.9rem 3.8rem rgba(31, 30, 30, 0.226);
 }
+
+.phone input[type="checkbox"]{
+    position:absolute;
+    height:8rem;
+    width:8rem;
+    cursor: pointer;
+    appearance: none;
+    z-index: 1;
+}
+
+.phone input:checked{
+    counter-increment: juego ;
+}
+
+.contador::after {
+    content: counter(juego);
+}
+
+.phone p{
+    color: white;
+    margin: 2rem 0 0 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
 .tierra{
     background: rgb(161, 22, 22);
     border-radius:3rem;
@@ -37,6 +62,11 @@ body{
     border: 0.1rem solid black;
 }
 
+.conejo{
+    animation-name: saltar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
 
 .layer-1{
     position: absolute;
@@ -45,6 +75,8 @@ body{
     width: 8rem;
     bottom: 0;
     right: 6rem;
+
+    animation-duration:1s;
 
 }
 
@@ -76,6 +108,8 @@ body{
     width: 8rem;
     bottom: 0;
     left: 2rem;
+
+    animation-duration: 2.5s;
     
 }
 
@@ -96,6 +130,8 @@ body{
     width: 8rem;
     bottom: 0;
     right: 1.5rem;
+
+    animation-duration: 1.5s;
     
 }
 
@@ -319,16 +355,6 @@ body{
 
 
 
-
-input:checked{
-    counter-increment: juego;
-}
-
-.contador::after {
-    content: counter(juego);
-}
-
-
 @keyframes parpadeo{
     0%{
         transform:scale(1);
@@ -340,5 +366,17 @@ input:checked{
 
     10%{
         transform: scale(1);
+    }
+}
+
+@keyframes saltar{
+    0%{
+        transform: translate(1,1);
+    }
+    50%{
+        transform: translate(0rem,6rem);
+    }
+    100%{
+        transform: translate(1,1);
     }
 }
